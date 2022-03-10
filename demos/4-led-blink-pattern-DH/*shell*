@@ -1,0 +1,101 @@
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  led.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f led.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 498 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make load
+msp430loader.sh led.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  led.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f led.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 498 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make clean
+rm -f *.o *.elf
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  led.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f led.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 498 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make clean
+rm -f *.o *.elf
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  led.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f led.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 498 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make load
+msp430-elf-gcc -mmcu=msp430g2553 -I../h   -c -o main.o main.c
+msp430-elf-gcc -mmcu=msp430g2553 -I../h -L/opt/ti/msp430_gcc/include  -o led.elf main.o ../lib/libTimer.a
+msp430loader.sh led.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  led.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f led.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 498 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> make stop
+make: *** No rule to make target 'stop'.  Stop.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/4-led-blink-pattern-DH> ..
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos> ls
+10-switch-full-modular  3-led-blink             6-led-assy                h          timerLib
+11-buzzer               4-led-blink-pattern     7-led-blink-file-modular  lib
+1-led                   4-led-blink-pattern-DH  8-switch                  Makefile
+2-led-interrupt         5-led-fn-modular        9-switch-flash-combo      README.md
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos> cd 1-led
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/1-led> make load
+msp430loader.sh led.elf
+check 
+Detected msp430 dev kit
+/opt/ti/uniflash/dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f  led.elf
+Executing the following command:
+> /opt/ti/uniflash_5.1.0/deskdb/content/TICloudAgent/linux/ccs_base/DebugServer/bin/DSLite flash --config /opt/ti/uniflash/MSP430G2553.ccxml -f led.elf
+
+For more details and examples, please refer to the UniFlash Quick Start guide.
+
+info: MSP430:  Flash/FRAM usage is 252 bytes. RAM usage is 0 bytes.
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/1-led> cp -r 1-led/ 1-led-DH
+cp: cannot stat '1-led/': No such file or directory
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos/1-led> ..
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos> cp -r 1-led/ 1-led-DH
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos> ls
+10-switch-full-modular  3-led-blink             7-led-blink-file-modular  Makefile
+11-buzzer               4-led-blink-pattern     8-switch                  README.md
+1-led                   4-led-blink-pattern-DH  9-switch-flash-combo      timerLib
+1-led-DH                5-led-fn-modular        h
+2-led-interrupt         6-led-assy              lib
+student@systems-vm:~/Documents/arch1-project2-doholguin0012/demos> 

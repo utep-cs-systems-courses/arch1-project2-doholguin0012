@@ -1,0 +1,25 @@
+//Alternate LEDs from Off, Green, and Red
+#include <msp430.h>
+#include "libTimer.h"
+#include "led.h"
+
+int main(void) {
+  int count =0;
+  P1DIR |= LEDS;
+  P1OUT &= ~LED_GREEN;
+  P1OUT |= LED_RED;
+  while(count <= 10) {
+    if(count == 8){
+      P1OUT &= ~LED_RED;
+      P1OUT |= LED_GREEN;
+    }
+    else if(count == 0){
+      P1OUT &= ~LED_GREEN;
+      P1OUT |= LED_RED;
+      count++;
+    }
+    count++;
+    }
+  }
+  or_sr(0x18);		/* CPU off, GIE on */
+}
