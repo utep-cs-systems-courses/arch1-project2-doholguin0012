@@ -32,6 +32,7 @@ void __interrupt_vec(WDT_VECTOR) WDT ()                    // 250 interrupts/sec
 
   else if ((count % 125) == 0 && sw4_press_state == 1){    // SWITCH 4
     buzzer_set_period(0);
+    play_off();
     count = 0;
   }
 }
